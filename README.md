@@ -13,6 +13,7 @@ To run the project for the second task:
 
 # Implementation details
 
+For the REST server task:
  - Used SQL Server as a database, so you will need a local installation to run.
  - Used a composite key for the sorted position requirement, however as far as I know the row ordering is dependent on the DBMS so we might need to look for alternative solutions.
  
