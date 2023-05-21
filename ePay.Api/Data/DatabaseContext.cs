@@ -14,6 +14,7 @@ public class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // Composite key to store in the required order
         modelBuilder.Entity<Customer>()
             .HasKey(p => new { p.LastName, p.FirstName, p.Id });
     }
